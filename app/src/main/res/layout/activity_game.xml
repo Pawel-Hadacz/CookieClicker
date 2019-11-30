@@ -8,13 +8,16 @@
 
     <Button
         android:id="@+id/clickBtn"
+        style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginStart="172dp"
-        android:layout_marginTop="146dp"
+        android:layout_marginTop="39dp"
         android:layout_marginEnd="172dp"
         android:layout_marginBottom="147dp"
+        android:background="#0FFFFFFF"
+        android:drawableBottom="@mipmap/ic_launcher_foreground"
         android:text="@string/click_me"
         app:layout_constraintBottom_toTopOf="@+id/timeCounter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,4 +97,65 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/rankingmoveBtn"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bonusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="35dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/clickBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreView" />
+
+    <ImageButton
+        android:id="@+id/setBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="178dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/timeCounter"
+        app:layout_constraintEnd_toStartOf="@+id/clickBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rankingmoveBtn"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <Button
+        android:id="@+id/hiddenBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/cardview_light_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="293dp"
+        android:layout_marginBottom="65dp"
+        android:text="Ukryte Przejscie"
+        app:layout_constraintBottom_toTopOf="@+id/rankingmoveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/skinBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="62dp"
+        android:background="#57B92626"
+        android:text="Unlock New SKIN!"
+        app:layout_constraintBottom_toTopOf="@+id/tryAgainBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hiddenBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
